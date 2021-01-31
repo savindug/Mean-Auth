@@ -1,0 +1,30 @@
+<form class="form-signin mt-5"  [formGroup] = "formGroup" (ngSubmit) = "registerProcess()">
+    <div class="text-center">
+        <img class="mb-4" src="https://getbootstrap.com/docs/4.0/assets/brand/bootstrap-solid.svg" alt="" width="72" height="72">
+    </div>
+    
+    <h1 class="h3 mb-3 font-weight-normal">Please sign up</h1>
+    
+    <label for="inputEmail" class="sr-only">Username</label>
+    <input type="text" class="form-control" placeholder="Username" required autofocus formControlName = "username">
+    
+    <label for="inputEmail" class="sr-only">Email address</label>
+    <input type="text" class="form-control" placeholder="Email" required autofocus formControlName = "email">
+    
+    <label for="inputPassword" class="sr-only">Password</label>
+    <input type="password" class="form-control" placeholder="Password" required formControlName = "pwd">
+    
+    <label for="inputPassword" class="sr-only">Confirm Password</label>
+    <input type="password" class="form-control" placeholder="Confirm Password" required formControlName = "c_pwd">
+    
+    <div class="checkbox mb-3">
+      <label>
+        <input type="checkbox" value="remember-me"> I Agree to Terms & Conditions
+      </label>
+    </div>
+    <button class="btn btn-lg btn-primary btn-block mb-3" type="submit">Sign Up</button>
+
+    <p>Already have an Account? <a routerLink="/" routerLinkActive="active">Sign In</a></p>
+
+    <p class="mt-5 mb-3 text-muted">&copy; 2020</p>
+  </form>
